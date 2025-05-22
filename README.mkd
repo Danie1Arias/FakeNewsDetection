@@ -1,0 +1,22 @@
+# Fake News Propagation SEIR Model
+
+This repository contains the implementation of a novel SEIR-based model designed to simulate the spread of fake news in online social networks. Inspired by epidemiological modeling and enriched with psychological behavior mechanisms, our model captures how users interact with and propagate misinformation.
+
+## Project Overview
+
+The goal of this project is to:
+- Design and implement an SEIR compartmental model adapted for fake news propagation.
+- Compare three detection strategies:
+  1. **Centralized Detection Model**: A small fraction of expert nodes acts as fact-checkers.
+  2. **Decentralized Detection Model**: All nodes participate in misinformation detection.
+  3. **Hybrid Detection Model**: A mix of expert and community detection.
+- Analyze the **stability**, **stiffness**, and **steady-state behavior** of the system under different parameters.
+- Run Monte Carlo simulations on a Barabási–Albert (BA) network to observe long-term dynamics.
+
+## Project Structure
+
+```bash
+.
+├── seir_model.py           # Core simulation logic (SEIR class, run methods, plots)
+├── notebook.ipynb          # Jupyter notebook to run simulations and generate plots
+└── README.mkd              # This file
